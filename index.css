@@ -160,8 +160,29 @@ img {
         flex-wrap: nowrap;
         flex-direction: column;
     }
+
     .sketch {
         width: 100%;
+    }
+    
+    .conclusiongrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+    }
+
+    .lessons {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .softskills {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .hardskills {
+        grid-column: 1;
+        grid-row: 3;
     }
 }
 
