@@ -2,13 +2,305 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Iterative Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <div class="centered"><div class="introdiv">
+      <h1>Iterative Design</h1>
+      <h3>a case study on the design process</h3>
+      <div class="whitebox smallshadow">
+        <h6><b>Objective:</b> Work in a small group to design an interface for an emerging startup.
+           Sketch ideas of the interface, create an interactive high-fidelity prototype, and 
+           conduct user testing on this final prototype. 
+        <h6><b>Subject:</b> DRAPR, an online shopping startup</h6>
+        <div class="centered"><hr class="inlinehr"/>
+        <p class="context"><b>UI/UX (CS 1300) - Brown University - Fall 2020 </b></p>
+        <hr class="inlinehr"/></div>
+      </div>
+    </div></div>
+
+    <br>
+    <h3>The Startup</h3>
+    <br>
+    <div class="centered">
+      <div style="width: 70%;">
+        <p>
+          <b>DRAPR</b> builds software to help online shoppers see what their clothing looks like. 
+          The company’s online try-on widget helps shoppers get a better idea of how a shirt or 
+          other clothing item fits on a customizable 3D mannequin that users can adjust to fit 
+          their body type, height and weight.
+        </p>
+        <p><b>Type of Interface: </b>Desktop website</p>
+        <p><b>Users: </b>This website is marketing DRAPR to online shopping retailers who want to
+        make it easy for their customers to virtually try on clothes. This could reduce return
+        rate and prevent dissatisfied customers. It will be especially helpful for customers
+        who have unusual body shapes or sizes. More people are buying clothing online due to 
+        the pandemic, and don’t have the option to try on clothes in stores, making DRAPR a 
+        timely alternative.
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h3>Sketches</h3>
+    <br>
+    <p style="text-align: center;">We made 4 sketches of what the website might look like.</p>
+    <div class="centered"><div class="sketchdiv">
+      <div class="sketch whitebox"><img src="photos/sketch1.png" alt="image of 1st sketch"></div>
+      <div class="sketch whitebox"><img src="photos/sketch3.png" alt="image of 2nd sketch"></div>
+      <div class="sketch whitebox"><img src="photos/sketch2.png" alt="image of 3rd sketch"></div>
+      <div class="sketch whitebox"><img src="photos/sketch4.png" alt="image of 4th sketch"></div>
+    </div></div>
+
+    <br>
+    <br>
+    <h3>Wireframe</h3>
+    <br>
+    <div class="centered"><div class="centered" style="width: 60%">
+    <p style="width: 50%">We put together the best ideas from all of our sketches to create a wireframe
+      mockup. These are some of the features we knew we wanted to include in the prototype 
+      <i class="fa fa-arrow-right"></i>
+    </p>
+    <ul>
+      <li>Contact Us box</li>
+      <li>Founders' pictures</li>
+      <li>Background picture of clothes or models</li>
+      <li>Demo</li>
+      <li>Infinite scroll</li>
+      <li>Menu bar</li>
+    </ul>
+    </div></div>
+    <div class="centered">
+      <div class="whitebox" style="width: 60%">
+        <img src="photos/wireframe.gif" alt="wireframe of design" style="width: 100%;">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h3>First HiFI Mockup</h3>
+    <br>
+    <div class="centered">
+      <p style="width: 60%"><b>Design Choices: </b>We chose one font (Merriweather) and kept it consistent through
+      the website. We also kept our button design visually consistent. We chose to make the 
+      website infinite scroll, but include a navbar so that frequent users could reach their
+      destinations more quickly. We also used a background image, and put transluscent blocks 
+      behind the text to make it more readable.</p>
+    </div>
+    <div class="centered">
+      <div class="whitebox" style="width: 60%">
+        <img src="photos/hifi1.gif" alt="high fidelity prototype of design" style="width: 100%;">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <h3>Critical Feedback</h3>
+    <br>
+    <div class="centered"><div class="centered" style="width: 60%">
+      <p style="width: 40%">We had a mockup crit, wherein we received feedback on our design from an industry professional and our classmates. These are some of their suggestions, which we implemented below.
+        <i class="fa fa-arrow-right"></i>
+      </p>
+      <ul>
+        <li>No back button on checkout page</li>
+        <li>Can't see package prices on main page</li>
+        <li>Split the checkout page into login and payment</li>
+        <li>Hard to find checkout</li>
+        <li>No affordances to indicate that page scrolls</li>
+        <li>Match nav headers to the content headings</li>
+        <li>"Click to Customize" is positioned so it points to nothing</li>
+        <li>Button alignment should be consistent between pages (center all)</li>
+      </ul>
+    </div></div>
+    <br>
+    <br>
+
+    <h3>Final HiFi Prototype</h3>
+    <div class="centered">
+      <div class="whitebox" style="width: 60%">
+        <img src="photos/hifi2.gif" alt="high fidelity prototype of design" style="width: 100%;">
+      </div>
+    </div>
+
+    
+    <br>
+    <h3>User Testing</h3>
+    <br>
+    <div class="centered"><div style="width:60%">
+      <p style="text-align: center;">
+        We sent our prototype to usertesting.com and gave 3 users the following instructions:
+      </p>
+      <p>
+        <b>Scenario: </b> You are an employee for a clothing company. You are looking for 
+        additional features to add to your website to improve the shopping experience. 
+        Drapr is a company that offers virtual “try-it-on” software that can be embedded 
+        into websites. You will be evaluating the different plans that Drapr offers, 
+        and purchasing a plan for your clothing company.
+      </p>
+      <p>
+        <b>Overall Task: </b> Navigate the website, and purchase a plan. Once the plan 
+        is purchased, send a message to the PR team to get in touch with the company. 
+      </p>
+      <p>
+        <b>Subtasks: </b>
+        The interface below is a prototype mockup of a potential website. 
+        As such, not all links/features will be clickable. However, the main features of 
+        the prototype are functioning (including all features requested in the below subtasks). 
+      </p>
+      <p>Please attempt to complete the following tasks in order. </p>
+      <ol>
+        <li>Scroll down the website, taking note of the main features offered by the product</li>
+        <li>Select the “Basic Plan” from the plans offered</li>
+        <li>“Create an Account” to use for purchasing the plan</li>
+        <li>Enter billing details and confirm the purchase</li>
+        <li>Return to the homepage</li>
+        <li>Send a brief message to the PR team using the “Contact Us” feature</li>
+        <li>Return to the homepage</li>
+      </ol>
+      <p><b>Post-Task Questions:</b></p>
+      <ol>
+        <li>Did you face any challenges while using the website? If so, what were they?</li>
+        <li>On a scale of 1-10, how intuitive do you find the website design?</li>
+        <li>Are there any additional features that you would have liked on the website?</li>
+        <li>Is there anything else you would like to tell us/any additional comments you have?</li>
+      </ol>
+    </div></div>
+
+    <br>
+    <div class="centered"><div class="videosdiv">
+      <div class="videodiv whitebox smallshadow">
+        <video width="100%" height="auto" controls>
+          <source src="photos/usertesting1.mp4" type="video/mp4">
+            Your browser does not support the video tag. 
+            This video shows the first user going through the tasks. 
+        </video>
+      </div>
+      <div class="videodiv whitebox smallshadow">
+        <video width="100%" height="auto" controls>
+          <source src="photos/usertesting2.mp4" type="video/mp4">
+            Your browser does not support the video tag. 
+            This video shows the second user going through the tasks. 
+        </video>
+      </div>
+      <div class="videodiv whitebox smallshadow">
+        <video width="100%" height="auto" controls>
+          <source src="photos/usertesting3.mp4" type="video/mp4">
+            Your browser does not support the video tag. 
+            This video shows the third user going through the tasks. 
+        </video>
+      </div>
+    </div></div>
+    <br>
+
+    <br>
+    <h3>Summary of Results</h3>
+    <br>
+    <p style="text-align: center;">
+      Overall, we were fairly pleased with the results we obtained from the user testing experiments.
+    </p>
+    <div class="centered"><div style="width: 80%">
+      <ul>
+        <li>
+          Navigating through the homepage was generally in line with expectations. We were surprised 
+          to find that one of the users still had a bit of difficulty figuring out that the website 
+          scrolled (even with affordances such as peaking and a small arrow on the bottom of the page)
+        </li>
+        <li>
+          Since the website was small, we found that users generally remember where to go for the 
+          latter subtasks (Contact Us, etc…). However, this relied on recall rather than intuition 
+          (the users specifically stated that they “remembered where on the page this form was”)
+        </li>
+        <li>
+          Some users asked for a bit more specificity on the “try-it-on” widget (especially those 
+          users who were more unfamiliar with clothing sizing)
+        </li>
+        <li>
+          When selecting the plans, users were generally able to navigate without errors. One user
+           suggested creating more contrasting color palettes in the actual choice icons for the 
+           different plans
+        </li>
+        <li>
+          Users were dissatisfied with the vagueness of the landing page after sending a message 
+          to the PR team. They would have preferred to know an exact timeframe for receiving a 
+          response (we had a message that said “A representative of our time will reach out shortly” 
+          with no concrete timeframe)
+        </li>
+        <li>
+          We were happy to see that after the users figured out the scrolling mechanism, they made 
+          no errors on any of the subsequent tasks. We received feedback from those users that the 
+          navigation was simple and easy to use
+        </li>
+        <li>Some users also commented on the landing page after checking out and purchasing a product. 
+          It appears users really prefer concrete steps and actions on confirmation pages (i.e a 
+          confirmation email has been sent - reach out if you don’t get it in 10 minutes, a 
+          representative will reach out in 1-2 days, etc…)
+        </li>
+      </ul>
+    </div></div>
+    
+
+    <br>
+    <h3>Interface Changes</h3>
+    <br>
+    <div class="centered"><div style="width: 80%">
+      <ul>
+        <li>Our biggest change would be to make the affordances even more clear for scrolling. 
+          Not understanding the scroll made the website nearly completely unusable, so perhaps a 
+          scrolling bar on the right of the page or something similar would ensure this mistake is 
+          not made.
+        </li>
+        <li>We would add a bit more detail and information on the landing pages for the “checkout” 
+          and “contact us” buttons. This would reassure customers that they performed the correct tasks.
+        </li>
+        <li>
+          We might change the color scheme slightly on the icons for the three different plans. As is, 
+          it may be a bit difficult for customers to intuitively and immediately grasp the idea that 
+          the plans are radically different given the similarity in color schemes.
+        </li>
+        <li>
+          We might make fewer assumptions on familiarity with the exact measurements required for using the “try-it-on” widget and perhaps add a “help” icon that walks users through the steps of taking the necessary steps to use the widget.
+        </li>
+        <li>
+          Users generally relied on recall rather than intuition for navigating to specific elements on the scrollable home page. In the future we would add a clickable navigation bar on the top of the page that takes users directly to different sections of the page.
+        </li>
+        <ul><li>
+          Note: We considered implementing this feature in our original prototype, but unfortunately Figma did not have this functionality. Given its importance, we would definitely implement this in a real website.
+        </li></ul>
+      </ul>
+    </div></div>
+    <br>
+
+    <div class="centered"><div class="conclusion smallshadow">
+      <h3>Conclusion</h3>
+      <hr class="shorthr" style="width: 100%; background-color: lightgrey;">
+      <div class="conclusiongrid">
+        <div class="lessons">
+          <h6><b>Lessons Learned</b></h6>
+          <h6>This project taught us that there are often hidden usability issues in a design that can only be found with outside feedback. Both the critique and the user testing proved invaluable for exposing usability issues. We learned that it's important to consult a wide variety of opinions, because demographics like age can affect how intuitive users find an interface.</h6>
+        </div>
+        <div class="softskills">
+          <h6><b>Soft Skills:</b></h6>
+          <ul class="skillslist">
+            <li>Critiquing</li>
+            <li>Working in Teams</li>
+          </ul></h6>
+        </div>
+        <div class="hardskills">
+          <h6><b>Hard Skills:</b></h6>
+          <ul class="skillslist">
+            <li>User Testing</li>
+            <li>Wireframing</li>
+            <li>HiFi Prototyping</li>
+            <li>Iterative Design</li>
+          </ul>
+        </div>
+      </div>
+    </div></div>
   </body>
 </html>
