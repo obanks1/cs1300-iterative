@@ -59,6 +59,12 @@ h6 {
     row-gap: 0px;
 }
 
+.sketchdesc {
+    margin-bottom: 5px;
+    text-align: center; 
+    font-family: 'kalam';
+}
+
 img {
     width: 100%;
 }
